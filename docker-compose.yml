@@ -5,7 +5,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - /root/nginx/nginx.conf:/usr/local/nginx/conf/nginx.conf
-      - /root/nginx/log:/usr/local//nginx/logs
-      - /root/nginx/html:/usr/local/nginx/html
+      - /root/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - /root/nginx/log:/var/log/nginx/
+      - /root/nginx/html:/usr/share/nginx/html
     container_name: test
