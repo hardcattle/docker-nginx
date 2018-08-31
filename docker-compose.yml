@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nginx:
+    image: hardcattle/nginx:1.0
+    ports:
+      - 80:80
+    volumes:
+      - /root/nginx/nginx.conf:/usr/local/nginx/conf/nginx.conf
+      - /root/nginx/log:/usr/local//nginx/logs
+      - /root/nginx/html:/usr/local/nginx/html
+    container_name: test
